@@ -1,0 +1,11 @@
+.success-icon {
+  font-size: 48px;
+  margin: 20px 0 0 0;
+  color: rgb(154, 17, 233);
+}
+
+@media screen and (min-width: 650px) {
+  .success-icon {
+    font-size: 64px;
+  }
+}

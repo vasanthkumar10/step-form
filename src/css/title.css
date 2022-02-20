@@ -1,0 +1,28 @@
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.logo {
+  display: inline;
+  height: 48px;
+  width: 48px;
+}
+
+.logo-title {
+  font-weight: bolder;
+  font-size: x-large;
+  color: #444;
+}
+
+@media screen and (min-width: 650px) {
+  .logo {
+    height: 64px;
+    width: 64px;
+  }
+
+  .logo-title {
+    font-size: xx-large;
+  }
+}

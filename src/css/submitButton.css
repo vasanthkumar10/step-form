@@ -1,0 +1,13 @@
+.button {
+  background-color: rgb(154, 17, 233);
+  border-radius: 5px;
+  color: #f5f5f5;
+  margin: 10px 0;
+  width: 240px;
+}
+
+@media screen and (min-width: 650px) {
+  .button {
+    width: 400px;
+  }
+}

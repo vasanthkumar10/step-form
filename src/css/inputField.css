@@ -1,0 +1,35 @@
+.input {
+  font-weight: 600;
+  margin: 5px 0 20px 0;
+  width: 240px;
+}
+
+@media screen and (min-width: 650px) {
+  .input {
+    width: 400px;
+  }
+}
+
+.label {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.label-option {
+  color: #999;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ant-input {
+  border-radius: 5px 5px 5px;
+}
+
+.ant-input-group-addon:first-child {
+  border-radius: 5px 0 5px 5px;
+}
