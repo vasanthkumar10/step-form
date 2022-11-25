@@ -4,7 +4,7 @@ import SubmitButton from "../SubmitButton";
 import { CheckCircleFilled } from "@ant-design/icons";
 import "../../css/pageThree.css";
 
-function PageThree({ setStep }) {
+function PageThree({ setStep, fullName, displayName }) {
   return (
     <>
       <CheckCircleFilled className="success-icon" />
@@ -14,7 +14,12 @@ function PageThree({ setStep }) {
           "You have completed onboarding, you can start using the Eden!"
         }
       />
-      <SubmitButton content={"Launch Eden"} />
+      <SubmitButton
+        action={() => {
+          console.log(fullName, displayName);
+        }}
+        content={"Launch Eden"}
+      />
     </>
   );
 }

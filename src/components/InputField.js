@@ -2,7 +2,14 @@ import React from "react";
 import { Input } from "antd";
 import "../css/inputField.css";
 
-function InputField({ addonBefore, label, placeholder, labelOption }) {
+function InputField({
+  value,
+  action,
+  addonBefore,
+  label,
+  placeholder,
+  labelOption,
+}) {
   return (
     <div className="input-wrapper">
       <label className="label" for={`input-${label}`}>
@@ -15,6 +22,8 @@ function InputField({ addonBefore, label, placeholder, labelOption }) {
         id={`input-${label}`}
         name={`input-${label}`}
         placeholder={placeholder}
+        value={value}
+        onChange={(e) => action(e.target.value)}
       />
     </div>
   );

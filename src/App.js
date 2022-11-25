@@ -10,6 +10,8 @@ import ProgressBar from "./components/ProgressBar";
 function App() {
   const [step, setStep] = useState(0);
   const progressPositions = [0, 1, 2, 3];
+  const [fullName, setFullName] = useState("");
+  const [displayName, setDisplayName] = useState("");
 
   const getFormPage = () => {
     switch (step) {
@@ -18,9 +20,23 @@ function App() {
       case 2:
         return <PageTwo setStep={setStep} />;
       case 3:
-        return <PageThree setStep={setStep} />;
+        return (
+          <PageThree
+            fullName={fullName}
+            displayName={displayName}
+            setStep={setStep}
+          />
+        );
       default:
-        return <PageZero setStep={setStep} />;
+        return (
+          <PageZero
+            fullName={fullName}
+            setFullName={setFullName}
+            displayName={displayName}
+            setDisplayName={setDisplayName}
+            setStep={setStep}
+          />
+        );
     }
   };
 

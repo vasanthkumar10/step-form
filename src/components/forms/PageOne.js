@@ -17,6 +17,7 @@ function PageOne({ setStep }) {
         addonBefore={"www.eden.com/"}
         placeholder={"Example"}
       />
+      <SubmitButton action={() => setStep(0)} content={"Go Back"} />
       <SubmitButton action={() => setStep(2)} content={"Create Workspace"} />
     </>
   );
